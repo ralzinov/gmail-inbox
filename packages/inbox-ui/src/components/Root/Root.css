@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1px;
+    width: 750px;
+    height: 550px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

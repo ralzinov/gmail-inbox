@@ -1,0 +1,4 @@
+export const GET_ACCESS_TOKEN = '[Auth] GET_ACCESS_TOKEN';
+export const SET_ACCESS_TOKEN = '[Auth] SET_ACCESS_TOKEN';
+export const SET_ACCESS_TOKEN_STATUS = '[Auth] SET_ACCESS_TOKEN_STATUS';
+export const CLEAR_AUTH_TOKEN = '[Auth] CLEAR_AUTH_TOKEN';

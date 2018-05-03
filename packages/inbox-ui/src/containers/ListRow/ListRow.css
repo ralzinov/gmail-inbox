@@ -1,0 +1,92 @@
+.row {
+    display: flex;
+    margin-right: 14px;
+    border-bottom: 1px #e5e5e5 solid;
+    background: rgba(243,243,243,.85);
+    cursor: pointer;
+    font-size: 80%;
+    color: #222;
+    position: relative;
+}
+
+.row:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0;
+    height: 23px;
+    left: 3px;
+    align-self: center;
+}
+
+.row:hover:before {
+    opacity: 1;
+}
+
+.rowUnread {
+    background: rgba(255,255,255,.9);
+}
+
+.rowBold {
+    font-weight: bold;
+}
+
+.rowSelected {
+    background: #ffc;
+}
+
+.row > div {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.checkbox {
+    padding-left: 14px;
+    padding-right: 4px;
+}
+
+.text {
+    position: relative;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.text:before {
+    content: '-';
+    position: absolute;
+    left: -10px;
+}
+
+.star {
+
+}
+
+.important {
+
+}
+
+.sender {
+    width: 190px;
+    padding-left: 10px;
+    padding-right: 6px;
+}
+
+.title {
+    flex: 1;
+}
+
+.date {
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-left: 5px;
+    padding-left: 8px;
+    width: 84px;
+}

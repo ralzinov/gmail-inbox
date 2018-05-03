@@ -1,0 +1,13 @@
+{
+  "name": "gmail-inbox-ui",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Gmail inbox-ui application",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --debug --devtool cheap-module-source-map --output-pathinfo --history-api-fallback --hot --inline --progress --colors --port 3000 --open",
+    "build": "cross-env NODE_ENV=production webpack --progress --colors"
+  },
+  "license": "MIT",
+  "devDependencies": {}
+}

@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Gmail inbox preview - extension for Chrome",
+  "description": "This extension watches Gmail and allows to preview and manage inbox",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/16.png",
+      "24": "icons/24.png",
+      "32": "icons/32.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "permissions": [
+    "background",
+    "identity",
+    "alarms",
+    "notifications",
+    "cookies",
+    "https://mail.google.com/"
+  ],
+  "oauth2": {
+    "client_id": "466668520976-u8a8p0lojgk60gs75rmodp0cdpvlg00a.apps.googleusercontent.com",
+    "scopes": [
+      "https://mail.google.com/",
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.metadata",
+      "https://www.googleapis.com/auth/gmail.modify"
+    ]
+  },
+  "key": "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCizPjdWvVJ2b+tjW3+z6EU5j6ufK8ceMfyk9rcaffCKfvehspEKSCMca8zXm4MtGWqL+WIVm9tKU6zl2yWlb3DWQo/JWD1XmhkU27u7VZSQHri1r6mRR8Hx6Hig7Zy4rag56vxn69Lims1HyNpXKPoywbzYI5DQbhOeHBnFVl1RreDI1SVaNDnkOG3fJngpFauPo17xTRiJsUPdYzQnrgZlYaQfyvjVqcCdaUH7sIaSTjKMs+mdq6tM9uAPnTXT5T7pesF9kHBb39a0XZVec0LPOQqLH9m8fa4p6UW399TJX9ffV5Emk0htECGDTtQ8hqOkHvJt7Cq0MFyq65mDCYbAgMBAAECggEAOW62HOEJx5PZ2xAZzdrRqN3RHx09aX3yi9E9VKTNkuHcyRQkJwebQ/CXLjgR+slpVDCxePeFN61q5lB1LmqFF3VB+CTnn6g+i6YjbIat/TZiI8Q+XcnkuInkwlRU+RKh+wG/1u3OmYeraoIhq/nSmT2GpjVZ+sAklQpIHRWbCZPo7Ll0rqQqdPAr5OSLQeIiO06EGd+K7ZGi8iDLx5+IyyQSi10t3K/EFq0s6w/HU4J0BV3c7FZgg/kOGI1Gl1KpiXTbu5t7XPq7o3pKiFJyEhL+QwQpMi8MdaCrT4/592jGyNV1Z2SCJB+cj7tmBGScIxkbVAXbqfa3nbI2c/OPAQKBgQDSsHP2Bjswt/51cWlBnGC1hPjkqcuIUd9C/GaR9QNl8j2atw3rlWHr5aJSujZQkmf3VBUReU6HwZn9i6x4Bxa2m0yM0GyNzG8F+rDmWlRqxBL0YrqPixW1yalEJRZtHo8BEauoQlzyuZWJVff7WvSGnluiXrkcCsmXYb+FA3ZsWQKBgQDF0ABRLrQrKF4ml74gvlutl0glcycmVnlI/IR2PzlYadBq4ZhNTijO4iuvk7x95VBA1+ObsaNQnbh+RQ2oFCZvKUTv1OeFn7gYqh2SnAsMezGNCG/aWhYGEFUANgv0KTgV7/bvRGODxGb9h1YHGBC0oMeOr+XIARY0paFaZBGHkwKBgB0zPW8cn/l5lre6NydTwAeIXWJ7sey7xCCpkKGr/oOTljwqILDE7GRgWCX1DvANyoD5002vrVWdXHVKdWXRPbGjRnHBtTnV2pFOlFPoswh1Eldyk36vfRvLzjzWkwwejx1L0KmqQO2XEQWOt6bLjVZW/kY7sJYVXKkxb/TEbRZJAoGAFucyYjPqIGUYIZfIJ7pimwK9E7j1e3bfrBewrpA7b4Uw4G8mVy0JhIqjTDzqwhje5eMZM1mp8xeP2O7d2ewbVxuMI8ie1dXcVt67ddIjZVqOLiof6UQs8J7LeK7JS4fKOqACE0nzy7ndwtT8nO2oYYGMGXU8QZ/+ljHnMLQNY4kCgYEArdprhP4iD2M64m3zYgyoqdt94y9j99hCn7V/7RV10xVMxo57FtgYicaPpZlBUgYaHVpEKVorkEqGJ0/uMhPaNyRkRovIfAlOMyefUb5XNV+eKVq/qeUwmGXmeVQWonC9oHoAmtq81kBRr/QLrhF03Dw6SlEN9wtk5qbmxOP0VBk=",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com/; object-src 'self'"
+}

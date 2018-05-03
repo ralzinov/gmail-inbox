@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container > div:not(:last-child),
+.container > button:not(:last-child) {
+    margin-right: 16px;
+}
+
+.spacer {
+    margin-left: auto;
+}
